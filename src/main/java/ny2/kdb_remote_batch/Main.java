@@ -11,19 +11,20 @@ import org.apache.commons.lang3.StringUtils;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
-
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * Args: $1 target kdb process handle (`:host:port:id:pw) $2- q script files
+ * Main class
  */
-@Slf4j
 public class Main {
 
     // //////////////////////////////////////
-    // Sttaic
+    // Static
     // //////////////////////////////////////
 
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
+    
     public static void main(String[] args) throws Exception {
         log.info("Start.");
         

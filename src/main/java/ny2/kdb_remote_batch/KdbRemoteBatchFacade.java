@@ -8,21 +8,23 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import kx.c;
 import kx.c.KException;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * KdbRemoteBatchFacade
  */
-@Slf4j
 public class KdbRemoteBatchFacade {
 
     // //////////////////////////////////////
     // Filed
     // //////////////////////////////////////
 
+    private static final Logger log = LoggerFactory.getLogger(KdbRemoteBatchFacade.class);
+    
     // kdb
     private String host;
     private int port;
