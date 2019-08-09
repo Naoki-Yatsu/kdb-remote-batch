@@ -8,9 +8,9 @@ Build with maven
 ## How to use
 * Args
     * -c (--connect) VAL : kdb handle - `:host:port(:id:pw) (default: `::5001)
-    * -f (--file) VAL    : script list file
-    * -q (--qscript) VAL : q script file
-    * -h (--help)        : show usage message and exit (default: false)
+    * -f (--file) VAL    : script list file path
+    * -q (--qscript) VAL : q script file path
+    * -h (--help)        : show usage message and exit
 
 * Example 
 
